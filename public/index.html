@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>You're Not Welcome</title>
+		<link rel="stylesheet" type="txt/css" src="style.css">
+	</head>
+	<body>
+		<div class="form-container">
+			<form name="getfile" action="/file" method="GET">
+				<h5>Get File</h5>
+				<lable>Get File: </lable> <input type=text name="filename"><br />
+				<button type=submit>Submit</button>
+			</form>
+		</div>
+		<div class="form-container">
+			<form name="sendfile" action="/file" method="POST">
+				<h5>New File</h5>
+				<lable>File Name: </lable> <input type=text name="filename"><br />
+				<lable>Data: </lable> <textarea rows="20" cols="100" name="filename"></textarea> <br />
+				<button type=submit>Submit</button>
+			</form>
+		</div>
+		<div class="form-container">
+			<form name="getfile" action="/cmd" method="POST">
+				<h5>LS file</h5>
+				<lable>File NAME: </lable> <input type=text name="cmd"><br />
+				<button type=submit>Submit</button>
+			</form>
+		</div>
+		<div class="form-container">
+			<form name="getfile" action="/cmd/async" method="POST">
+				<h5>LS Async file</h5>
+				<lable>File NAME: </lable> <input type=text name="cmd"><br />
+				<button type=submit>Submit</button>
+			</form>
+		</div>
+	</body>
+</html>

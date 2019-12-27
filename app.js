@@ -1,4 +1,5 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
 const body_parser = require('body-parser');
 const fs = require('fs')
 const child_proc = require('child_process')
@@ -8,6 +9,7 @@ const APP_PORT = process.env.APP_PORT || 8080;
 const FILES_DIR = "files";
 const LONG_LIST_CMD = "ls -lrt ";
 
+app.use('/', express.static('public'))
 
 app.use(body_parser.json({extended: false}));
 
@@ -20,6 +22,9 @@ app.listen(APP_PORT, function(err){
 	}
 })
 
+app.get('/',function(req,resp,next){
+	resp.sendFile("/index.html")
+})
 
 app.post('/file',async function(req,resp,next){
 	let fileName = req.body.filename;
