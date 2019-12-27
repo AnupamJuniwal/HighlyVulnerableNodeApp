@@ -1,0 +1,30 @@
+{
+  "name": "highlyvulnerablenodeapp",
+  "version": "0.0.1",
+  "description": "Highly vulnerable app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnupamJuniwal/HighlyVulnerableNodeApp.git"
+  },
+  "keywords": [
+    "vulnerable",
+    "node",
+    "child",
+    "process",
+    "file"
+  ],
+  "author": "AnupamJuniwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnupamJuniwal/HighlyVulnerableNodeApp/issues"
+  },
+  "homepage": "https://github.com/AnupamJuniwal/HighlyVulnerableNodeApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
